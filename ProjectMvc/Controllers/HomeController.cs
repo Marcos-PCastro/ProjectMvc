@@ -18,6 +18,15 @@ namespace ProjectMvc.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Aplicação web MVC de vendas. ";
+            ViewData["Criador"] = "Marcos Paulo";
+
+            return View();
+
+        }
+
         public IActionResult Privacy()
         {
             return View();
